@@ -1,0 +1,14 @@
+<section class="menu-section" id="menu">
+  <h2>Our Menu</h2>
+  <p class="subtitle">Delicious pizzas made fresh for you</p>
+
+  <div class="menu-grid">
+    <div class="menu-card" *ngFor="let pizza of pizzas">
+      <img class="pizza-image" [src]="pizza.url" alt="Our Pizzeria">
+      <h3>{{ pizza.name }}</h3>
+      <p class="desc">{{ pizza.description }}</p>
+      <span class="price">\${{ pizza.price }}</span>
+    </div>
+  </div>
+</section>
+

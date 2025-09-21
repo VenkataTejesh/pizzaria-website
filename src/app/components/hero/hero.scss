@@ -1,0 +1,48 @@
+.hero {
+  background: url('/assets/pizza-hero.jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  .overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-buttons {
+    margin-top: 1.5rem;
+
+    button {
+      margin: 0 10px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .primary {
+      background: #e63946;
+      color: white;
+
+      &:hover { background: #d62828; }
+    }
+
+    .secondary {
+      background: white;
+      color: #e63946;
+
+      &:hover { background: #f8dada; }
+    }
+  }
+}
